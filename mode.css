@@ -1,0 +1,88 @@
+.vmodal{}
+
+.vmodal.open .madal-overlay ,
+.vmodal.open .madal-windows {
+    opacity: 1;
+    z-index: 1000;
+
+}
+
+.vmodal.hide .madal-overlay ,
+.vmodal.hide .madal-windows {
+    opacity: 1;
+    z-index: 1000;
+
+}
+
+
+.vmodal.open .madal-window {
+    transform: translateY(100px)
+}
+
+.vmodal.open .madal-overlay {
+    background: rgba(0,0,0,5);
+}
+
+
+.vmodal.hide .madal-window {
+    transform: translateY(-200px)
+}
+
+.vmodal.hide .madal-overlay {
+    background: rgba(0,0,0,0);
+}
+
+
+.modal-window, .modal-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+.madal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(133, 129, 129, 0.363);
+    transition: background .2s ease-in;
+}
+
+.modal-window {
+   
+    margin: 0 auto;
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translateY(-200px);
+    transition: transform .2s ease-in ;
+    
+}
+
+.madal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.mode-title {
+    font-size: 1,5em;
+}
+
+.madal-close{
+    cursor: pointer;
+}
+
+.madal-body {
+    padding: 10px;
+}
+
+.modal-body p {
+    padding: 0 0 5px;
+}
+
+.madal-footer {
+    border-top: 1px solid #eee;
+    padding: 5px 10px;   
+}
