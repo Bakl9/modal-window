@@ -1,1 +1,1 @@
-const  $  = . }
+const   Modal = $.modal()
